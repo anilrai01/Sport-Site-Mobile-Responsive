@@ -1,0 +1,187 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    background: url("../image/bg.jpg");
+    background-repeat: repeat-x;
+    background-color: #bfbfbf;
+    font-family: Arial;
+}
+
+.container {
+    margin: auto;
+    background: rgb(255, 255, 255);
+    width: 940px;
+}
+
+/* Header Definition*/
+
+header {
+    height: 135px;
+    border-bottom: 10px solid #d7d7d7;
+}
+
+.logo {
+
+    float: left;
+}
+
+header img {
+    width: 164px;
+    height: 125px;
+}
+
+.clr{
+    clear:both;
+}
+
+.contact {
+    float: right;
+    padding: 3px 15px;
+    text-align: right;
+    color: #064570;
+}
+
+.contact img {
+    height: 39px;
+    width: 37px;
+}
+
+/* Content Definition Start*/
+
+.content {
+    padding-bottom: 25px;
+    padding-left: 25px;
+    font-family: sans-serif;
+    font-size: 12px;
+    text-align: justify;
+}
+
+.content-left {
+    width: 63%;
+    float: left;
+    padding-right: 40px;
+    border-right: dotted 1px black;
+}
+
+.content-left p {
+    padding: 10px;
+    font-size: 12px;
+}
+
+.content .content-left h2 {
+    font-size: 21px;
+    color: #2777be;
+    font-family: Arial, Helvetica, sans-serif;
+    text-shadow: 1px 1px 1px #4e90ca;
+}
+
+.content-right {
+    float: right;
+    width: 30%;
+    text-align: left;
+    line-height: 25px;
+}
+
+.content .content-right h3 {
+    font-size: 21px;
+    color: #2777be;
+    font-family: Arial, Helvetica, sans-serif;
+    text-shadow: 1px 1px 1px #4e90ca;
+}
+
+.content .content-right h4 {
+    color: #044470;
+    font-size: 13px;
+    text-shadow: 1px 1px 1px #447ea5;
+}
+
+.clr {
+    clear: both;
+}
+
+footer {
+    height: 25px;
+    color: white;
+    background-color: #044470;
+    font-size: 11px;
+}
+
+footer .address {
+    float: left;
+    padding: 7px;
+    padding-left: 20px;
+}
+
+footer .copyr {
+    float: right;
+    padding: 7px;
+    padding-right: 20px;
+}
+
+.slider {
+    width: 100%;
+    height: 340px;
+}
+
+/* Navigation Part */
+
+nav {
+    float: right;
+    margin-right: -20px;
+    margin-top: 16px;
+    padding: 5px;
+}
+
+nav ul {
+    list-style-type: none;
+}
+
+nav ul li {
+    float: left;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    background-color: #044470;
+    -webkit-padding: 8px 15px;
+    padding: 5px 10px;
+    font-size: 14px;
+    border-right: 1px solid #d7d7d7;
+}
+
+nav ul li a:hover,
+a.active {
+    color: #773129;
+    background-color: #d7d7d7;
+}
+
+/* Responsive Design*/
+
+@media(max-width: 500px)
+{
+    /* Header Part*/
+    .container{width: 90%;}
+    .contact{float:none; padding:0px;margin-right: 15px;}
+    header{height: 90px}
+    header img{height: 80px; width: 95px}
+    .contact{ font-size:12px; margin-top:0px;}
+    .contact img{ width: 17px; height: 19px; margin-top: -3px;}
+    nav ul li a{font-size: 11px;}
+    nav{ margin-top: 7px;}
+    
+    /* Slider part*/
+    .slider{width:100%; height: 170px;}
+    
+    /* Content Part */
+    .content{width: 93%}
+    .content{font-size: 12px;}
+    .content .content-left{float:none;width:100%;
+    border:none; border-bottom: 1px dotted black;margin-bottom:20px;}
+    .content .content-right{float:none;width:100%;}
+
+}
